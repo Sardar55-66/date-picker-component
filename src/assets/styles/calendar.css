@@ -1,0 +1,94 @@
+.vue-calendar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  padding: 4px 8px;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.nav-button:hover {
+  opacity: 0.6;
+}
+
+.month-year {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  padding: 8px;
+}
+
+.calendar-day.other-month {
+  color: #ccc;
+}
+
+.calendar-day.today {
+  color: #333;
+}
+
+.calendar-day.selected {
+  border: 1px solid #b3e5fc;
+  background: transparent;
+  color: #333;
+}
+
+.calendar-day.selected.today {
+  border: 1px solid #b3e5fc;
+  background: transparent;
+  color: #333;
+}
+
